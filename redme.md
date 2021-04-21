@@ -11,6 +11,6 @@
 
 ### Day 10
 
-- MySQL DB Creation
-- MySQL Table Creation
+- MySQL DB Creation - refer recording video
+- MySQL Table Creation - refer recording video
 - Connecting HTML with PHP
