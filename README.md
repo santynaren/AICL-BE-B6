@@ -14,3 +14,9 @@
 - MySQL DB Creation - refer recording video
 - MySQL Table Creation - refer recording video
 - Connecting HTML with PHP
+
+### Day 11
+
+- Connection of DB with PHP
+- Inserting form data into the DB
+
