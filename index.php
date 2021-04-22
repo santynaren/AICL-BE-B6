@@ -16,6 +16,7 @@ $serverName = "localhost";
 $databaseName = "batchsix";
 $userName = "root";
 $password = "";
+$tableName = "websitequery";
 
 $connectionStatusQuery = new mysqli($serverName,$userName,$password,$databaseName);
 
@@ -24,7 +25,10 @@ $connectionStatusQuery = new mysqli($serverName,$userName,$password,$databaseNam
 if($connectionStatusQuery->connect_error !== null){
     echo "Unable to connect Database";
 }else{
-    echo "Connection was successful";
+
+    $insertingFormData = "INSERT INTO $tableName VALUES ('','test','test1','test2','test3')";
+    $runQueryStatus = $connectionStatusQuery->query($insertingFormData);
+    var_dump($runQueryStatus);
 }
 
 
