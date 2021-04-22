@@ -18,6 +18,11 @@ $userName = "root";
 $password = "";
 $tableName = "websitequery";
 
+$name= $_POST['name'];
+$message = $_POST['message'];
+$number = $_POST['number'];
+$email = $_POST['email'];
+
 $connectionStatusQuery = new mysqli($serverName,$userName,$password,$databaseName);
 
 // var_dump($connectionStatusQuery);
@@ -26,13 +31,17 @@ if($connectionStatusQuery->connect_error !== null){
     echo "Unable to connect Database";
 }else{
 
-    $insertingFormData = "INSERT INTO $tableName VALUES ('','test','test1','test2','test3')";
+    $insertingFormData = "INSERT INTO $tableName VALUES ('','$name','$email','$number','$message')";
     $runQueryStatus = $connectionStatusQuery->query($insertingFormData);
-    var_dump($runQueryStatus);
+   if($runQueryStatus){
+        echo "Data inserted!";
+
+   }else{
+    echo "Something went wrong!";
+   }
+
+
 }
-
-
-
 
 
 ?>
