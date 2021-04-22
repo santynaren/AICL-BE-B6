@@ -8,3 +8,9 @@
 
 - DB: MySQL
 - Server: XAMPP Apache
+
+### Day 10
+
+- MySQL DB Creation - refer recording video
+- MySQL Table Creation - refer recording video
+- Connecting HTML with PHP
