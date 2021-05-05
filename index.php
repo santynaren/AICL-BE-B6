@@ -35,6 +35,13 @@ if($connectionStatusQuery->connect_error !== null){
     $runQueryStatus = $connectionStatusQuery->query($insertingFormData);
    if($runQueryStatus){
         echo "Data inserted!";
+        $getDataFromDB = "SELECT * FROM $tableName";
+        $runQueryGet = $connectionStatusQuery->query($getDataFromDB);
+        if($runQueryGet->num_rows > 0){
+            while($row = $runQueryGet->fetch_assoc()){
+                echo "<br/>".$row["name"];
+            }
+        }
 
    }else{
     echo "Something went wrong!";
