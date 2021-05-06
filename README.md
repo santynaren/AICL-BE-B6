@@ -20,3 +20,8 @@
 - Connection of DB with PHP
 - Inserting form data into the DB
 
+### Day 12-13
+
+- Get data from DB
+- Query Params in PHP
+
