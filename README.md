@@ -25,3 +25,7 @@
 - Get data from DB
 - Query Params in PHP
 
+Day 15
+
+Completed the course.
+
